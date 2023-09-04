@@ -1,12 +1,87 @@
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+html {
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary: hsl(45deg, 100%, 40%);
+  --color-secondary-highlight: hsl(45deg, 100%, 50%);
+  --color-gray-0: hsl(0deg, 0%, 0%);
+  --color-gray-1:hsl(0deg, 0%, 10%);
+  --color-gray-2: hsl(0deg, 0%, 30%);
+  --color-gray-3: hsl(0deg, 0%, 40%);
+  --color-gray-4: hsl(0deg, 0%, 60%);
+  --color-gray-5: hsl(0deg, 0%, 100%);
 }
 
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* Add styles here! */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  background-color: var(--color-gray-5);
+  font-size: 1.25rem;
+  font-weight: 400;
+  border-bottom: 8px solid var(--color-gray-2);
+}
+
+.title {
+  font-size: 2.0rem;
+  font-weight: 800;
+  margin-bottom: 48px;
+}
+
+
+.intro-chunk {
+  padding-top: 96px;
+  padding-bottom: 64px;
+  padding-left: 8%;
+  padding-right:8%;
+}
+
+.intro-chunk p {
+  margin-bottom: 16px;
+}
+
+.intro-chunk strong {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+main {
+  background-color: var(--color-gray-3);
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 48px 0;
+}
+
+.card {
+  padding: 8px 8%;
+}
+
+.card p {
+  margin-bottom: 16px;
+}
+
+section {
+  background-color: var(--color-gray-5);
+  border-bottom: 8px solid var(--color-gray-4);
+}
+
+.indented-heading {
+  background-color: var(--color-secondary-highlight);
+  border-bottom: 8px solid var(--color-secondary);
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
