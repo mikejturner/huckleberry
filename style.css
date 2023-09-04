@@ -28,6 +28,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.max-width-wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
 header {
   background-color: var(--color-gray-5);
   font-size: 1.25rem;
@@ -45,8 +50,17 @@ header {
 .intro-chunk {
   padding-top: 96px;
   padding-bottom: 64px;
-  padding-left: 8%;
-  padding-right:8%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.card {
+  padding-top: 8px;
+}
+
+.card  * {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .intro-chunk p {
@@ -65,10 +79,6 @@ main {
   padding: 48px 0;
 }
 
-.card {
-  padding: 8px 8%;
-}
-
 .card p {
   margin-bottom: 16px;
 }
@@ -84,4 +94,6 @@ section {
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 24px;
+  padding-left: 32px;
+  margin-left: -8px;
 }
